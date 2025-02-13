@@ -5,14 +5,13 @@ public class Perulangan {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String NIM;
+        long NIM;
         int n;
         System.out.println();
         System.out.print("Masukkan NIM : ");
-        NIM = input.nextLine();
+        NIM = input.nextLong();
 
-        System.out.print("Masukkan 2 digit terakhir NIM Anda : ");
-        n = input.nextInt();
+        n = (int) (NIM % 100);
 
         if (n < 10) {
             n += 10;
@@ -24,11 +23,11 @@ public class Perulangan {
                 continue;
             }
             if (i % 2 == 0) {
-                System.out.print(i);
+                System.out.print(i + " ");
             }
 
             if (i % 2 != 0) {
-                System.out.print("*");
+                System.out.print("* ");
             }
 
         }
