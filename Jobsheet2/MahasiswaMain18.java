@@ -10,6 +10,5 @@ public class MahasiswaMain18 {
         mhs1.ubahKeklas("SI 2K");
         mhs1.updateIpk(3.60);
         mhs1.tampilkanInformasi();
-        
     }
 }
