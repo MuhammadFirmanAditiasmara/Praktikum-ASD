@@ -1,25 +1,27 @@
+
 import java.util.Scanner;
 
 public class Tugas3 {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
+
         System.out.print("Masukkan jumlah mata kuliah: ");
-        int matkul = input.nextInt();                                                                                                                                                                                                                                                                                                                            
-        input.nextLine(); 
-        
+        int matkul = input.nextInt();
+        input.nextLine();
+
         String[] namaMataKuliah = new String[matkul];
         int[] sks = new int[matkul];
         int[] semester = new int[matkul];
         String[] hari = new String[matkul];
-        
+
         inputMataKuliah(input, matkul, namaMataKuliah, sks, semester, hari);
-        
+
         while (true) {
             tampilkanMenu();
             int pilihan = input.nextInt();
             input.nextLine();
-            
+
             switch (pilihan) {
                 case 1:
                     tampilkanSeluruhJadwal(namaMataKuliah, sks, semester, hari, matkul);
@@ -52,7 +54,7 @@ public class Tugas3 {
             sks[i] = scanner.nextInt();
             System.out.print("Semester: ");
             semester[i] = scanner.nextInt();
-            scanner.nextLine(); 
+            scanner.nextLine();
             System.out.print("Hari Kuliah: ");
             hari[i] = scanner.nextLine();
         }

@@ -59,7 +59,7 @@ public class Tugas2 {
         sisi = input.nextInt();
         
         volumeKubus = 6*sisi*sisi;
-        System.out.println("Volume Kubus : " + volumeKubus);
+        System.out.println("Luas Permukaan kubus : " + volumeKubus);
         
 
     }
@@ -70,7 +70,7 @@ public class Tugas2 {
         sisi = input.nextInt();
         
         volumeKubus = 12*sisi;
-        System.out.println("Volume Kubus : " + volumeKubus);
+        System.out.println("Keliling Kubus : " + volumeKubus);
         
 
     }
