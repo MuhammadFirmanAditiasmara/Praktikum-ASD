@@ -15,15 +15,27 @@ public class MahasiswaDemo18 {
         list.tambah(m4);
         list.tambah(m5);
 
-        System.out.println("Data Mahasiswa sebelum sorting: ");
-        list.tampil();
+        // System.out.println("Data Mahasiswa sebelum sorting: ");
+        // // list.tampil();
+        list.input();
 
         System.out.println("Data Mahasiswa setelah sorting berdasarkan IPK (DESC) : ");
         list.bubbleSort();
         list.tampil();
 
+        // Percobaan 3
         System.out.println("Data yang sudah terurut menggunakan SELECTION SORT (ASC) : ");
         list.SelectionSort();
         list.tampil();
+
+        // Percobaan 4
+        System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (ASC)");
+        list.InstertionSort();
+        list.tampil();
+        // Pertanyaan Percobaan 4
+        System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (DESC)");
+        list.InstertionSort();
+        list.tampil();
+
     }
 }
