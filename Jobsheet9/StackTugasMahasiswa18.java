@@ -1,4 +1,5 @@
 
+
 public class StackTugasMahasiswa18 {
 
     Mahasiswa18[] stack;
@@ -61,8 +62,24 @@ public class StackTugasMahasiswa18 {
         }
     }
 
+    // Pertanyaan nomor 4 Percobaan 1
+    public Mahasiswa18 peekBot() {
+        if (!isEmpty()) {
+            return stack[0];
+        } else {
+            System.out.println("Stack kosong! Tidak ada tugas yang dikumpulkan.");
+            return null;
+
+        }
+    }
+
+    // Pertanyaan nomor 5 Percobaan 1
+    public int jumlahTugas() {
+        return top + 1;
+    }
+
     public void print() {
-        for (int i = 0; i <= top; i++) {
+        for (int i = top; i >= 0; i--) {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
         System.out.println("");
