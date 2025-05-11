@@ -2,8 +2,9 @@
 import java.util.Scanner;
 
 public class MahasiswaDemo18 {
+
     public static void main(String[] args) {
-        StackTugassMahasiswa18 stack = new StackTugassMahasiswa18(5);
+        StackTugasMahasiswa18 stack = new StackTugasMahasiswa18(5);
         Scanner scan = new Scanner(System.in);
         int pilih;
 
@@ -11,8 +12,10 @@ public class MahasiswaDemo18 {
             System.out.println("\nMenu:");
             System.out.println("1. Mengumpulkan Tugas");
             System.out.println("2. Menilai Tugas");
-            System.out.println("3. Melihat Tugas");
+            System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("5. Melihat Tugas Terbawah"); // Pertanyaan nomor 4 percobaan 1
+            System.out.println("6. Melihat Jumlah Tugas "); // Pertanyaan nomor 5 percobaan 1
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine();
@@ -50,9 +53,22 @@ public class MahasiswaDemo18 {
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
                     break;
+
+                // Pertanyaan nomor 4 percobaan 1
+                case 5:
+                    Mahasiswa18 seek = stack.peekBot();
+                    if (seek != null) {
+                        System.out.println("Tugas pertama dikumpulkan oleh " + seek.nama);
+                    }
+
+                // Pertanyaan nomor 5 percobaan 1
+                case 6:
+                    int jumlah = stack.jumlahTugas();
+                        System.out.println("Jumlah tugas yang dikumpulkan: " + jumlah);
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid");
             }
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih >= 1 && pilih <= 6);
     }
 }
