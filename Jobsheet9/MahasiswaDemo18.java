@@ -40,6 +40,9 @@ public class MahasiswaDemo18 {
                         int nilai = scan.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
+                        // percobaan 2
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: " + biner);
                     }
                     break;
                 case 3:
@@ -64,7 +67,7 @@ public class MahasiswaDemo18 {
                 // Pertanyaan nomor 5 percobaan 1
                 case 6:
                     int jumlah = stack.jumlahTugas();
-                        System.out.println("Jumlah tugas yang dikumpulkan: " + jumlah);
+                    System.out.println("Jumlah tugas yang dikumpulkan: " + jumlah);
                     break;
                 default:
                     System.out.println("Pilihan tidak valid");
