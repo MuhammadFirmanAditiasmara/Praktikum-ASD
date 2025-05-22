@@ -13,4 +13,5 @@ public class Mahasiswa18 {
     public void tampiilkanData(){
         System.out.println(nim + " - " + nama + " - " + prodi + " - " + kelas );
     }
+
 }
