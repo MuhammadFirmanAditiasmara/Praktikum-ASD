@@ -20,7 +20,7 @@ public class MataKuliahDemo18 {
         for (int i = 0; i < jmlMatkul; i++) {
             System.out.println("Data Mata Kuliah ke-" + (i + 1));
             arrayOfMataKuliah18[i].cetakInfo();
-            
+
         }
     }
 }

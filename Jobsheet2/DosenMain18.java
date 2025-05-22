@@ -18,3 +18,4 @@ public class DosenMain18 {
         dosen2.setStatusAktif(true);
     }
 }
+ 

@@ -20,7 +20,7 @@ public class MataKuliah18 {
 
     void tambahJam(int jam) {
         jumlahJam += jam;
-        System.out.println("Jumlah jam telah berhasil ditambahkan menjadi " + jumlahJam + " jam");;
+        System.out.println("Jumlah jam telah berhasil ditambahkan menjadi " + jumlahJam + " jam");
 
     }
 

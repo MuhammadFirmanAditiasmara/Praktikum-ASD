@@ -36,9 +36,9 @@ public class MahasiswaDemo18 {
         // list.tampil();
         Scanner input = new Scanner(System.in);
 // int jumMhs = 5;
-        System.out.println("Masukkan jumlah mahasiswa: ");
+        System.out.print("Masukkan jumlah mahasiswa: ");
         int jumMhs = input.nextInt();
-
+        input.nextLine();
         for (int i = 0; i < jumMhs; i++) {
             System.out.println("Masukkan data mahasiswa ke-" + (i + 1));
             System.out.print("NIM     : ");

@@ -36,9 +36,9 @@ public class DosenMain18 {
         int cariUmur = input.nextInt();
 
         System.out.println("\nMenggunakan sequential searching");
-        int posisiSeq = list.PencarianDataSequential18(cari);
-        list.tampilPosisi(cari, posisiSeq);
-        list.tampilDataSearch(cari, posisiSeq);
+        int posisiSequential = list.PencarianDataSequential18(cari);
+        list.tampilPosisi(cari, posisiSequential);
+        list.tampilDataSearch(cari, posisiSequential);
 
         System.out.println("\nMenggunakan binary searching");
         list.SortingASC(); 

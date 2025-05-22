@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "tes",
+            "request": "launch",
+            "mainClass": "tes",
+            "projectName": "Jobsheet7_b8066457"
+        },
+        {
+            "type": "java",
+            "name": "MahasiswaDemo18",
+            "request": "launch",
+            "mainClass": "MahasiswaDemo18",
+            "projectName": "Jobsheet7_b8066457"
+        },
+        {
+            "type": "java",
+            "name": "DosenMain18",
+            "request": "launch",
+            "mainClass": "DosenMain18",
+            "projectName": "Jobsheet7_b8066457"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
